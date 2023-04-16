@@ -90,7 +90,7 @@ const Intro4 = ({ sliderRef, blackStar }) => {
             type: 'output',
             data: { label: '' },
             position: { x: 650, y: 25 },
-            style: { background: '#010101', border: '1px solid #777', padding: 10 },
+            style: { background: '#010101', border: '1px solid #777', padding: 20 },
             targetPosition: 'left',
         },
         {
