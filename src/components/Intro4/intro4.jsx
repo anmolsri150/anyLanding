@@ -35,7 +35,7 @@ const Intro4 = ({ sliderRef, blackStar }) => {
                               options={{
                                   strings: ['data', 'analytics', 'simulation', 'api', 'magic'],
                                   autoStart: true,
-                                  delay: 50,
+                                  delay: 20,
                                   loop: true,
                               }}
                           /></span><br/> platform.

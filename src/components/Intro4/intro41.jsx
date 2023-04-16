@@ -24,9 +24,9 @@ const Intro4 = ({ sliderRef, blackStar }) => {
     const proOptions = { hideAttribution: true };
     const onConnect = useCallback((params) => setEdges((eds) => addEdge(params, eds)), [setEdges]);
   return (
-      <div className="container mb-80">
+      <div className="container mb-100 mt-60">
 
-          <div className="row feat justify-content-center mt-80">
+          <div className="row feat justify-content-center mt-100">
               <div className="col-lg-8 items wow active fadeIn codeBlock" data-wow-delay=".3s" style={{ background: "rgba(0,0,0,0.8)!important;", zIndex: 1, height: "40vh", width: "auto", padding: "0.2rem!important;", borderRadius: "5rem"}}>
                   <ReactFlow
                       nodes={nodes}
