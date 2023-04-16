@@ -33,8 +33,9 @@ const Intro4 = ({ sliderRef, blackStar }) => {
                           <span className="color-font">Software<sup>*</sup>&nbsp;</span>defined<br/><span className="color-font">
                           <Typewriter
                               options={{
-                                  strings: ['Data', 'Analytics', 'Simulation', 'Api', 'Magic'],
+                                  strings: ['data', 'analytics', 'simulation', 'api', 'magic'],
                                   autoStart: true,
+                                  delay: 50,
                                   loop: true,
                               }}
                           /></span><br/> platform.
