@@ -1,4 +1,4 @@
-import React, {useCallback, useState} from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import particlesConfig from "../../config/particle-config";
 import particlesBlackConfig from "../../config/pr-s-black";
 import Particles from "react-tsparticles";
@@ -27,6 +27,22 @@ const nodeTypes = {
 const defaultViewport = { x: 0, y: 0, zoom: 1.5 };
 const Intro4 = ({ sliderRef, blackStar }) => {
     const [bgColor, setBgColor] = useState(initBgColor);
+    const [visibility, setVisibility] = useState(initBgColor);
+    useEffect(()=> {
+        if (visibility) {
+            Array.from(document.getElementsByClassName("mouse-cursor")).forEach((el) => {
+                el.style.visibility ="hidden";
+            });
+        } else if (!visibility) {
+            Array.from(document.getElementsByClassName("mouse-cursor")).forEach((el) => {
+                el.style.visibility ="visible";
+            });
+        }
+    }, [visibility])
+    const switchMouseCursor = (val) => {
+        console.log("sd")
+        setVisibility(val)
+    }
     const onChange = (event) => {
         setNodes((nds) =>
             nds.map((node) => {
@@ -112,7 +128,7 @@ const Intro4 = ({ sliderRef, blackStar }) => {
   return (
       <div className="container mb-100 mt-60">
 
-          <div className="row feat justify-content-center mt-100" style={{width: "100%"}}>
+          <div className="row feat justify-content-center mt-100" style={{width: "100%"}} onMouseEnter={() => switchMouseCursor(true)} onMouseLeave={() => switchMouseCursor(false)}>
               <div className="col-10 offset-1 offset-lg-0 col-lg-10 items wow active fadeIn codeBlock" data-wow-delay=".3s" style={{ background: "rgba(0,0,0,0.8)!important;", zIndex: 3, height: "40vh", width: "100%", padding: "0.2rem!important;", borderRadius: "5rem"}}>
                   <ReactFlow
                       nodes={nodes}
