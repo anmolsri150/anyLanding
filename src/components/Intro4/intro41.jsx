@@ -18,8 +18,8 @@ const initialNodes = [
 ];
 const initialEdges = [{ id: 'e1-2', source: '1', target: '2' }];
 const Intro4 = ({ sliderRef, blackStar }) => {
-    const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
-    const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
+    const [nodes, setNodes, onNodesChange] = useNodesState([]);
+    const [edges, setEdges, onEdgesChange] = useEdgesState([]);
 
     const proOptions = { hideAttribution: true };
     const onConnect = useCallback((params) => setEdges((eds) => addEdge(params, eds)), [setEdges]);
@@ -27,7 +27,7 @@ const Intro4 = ({ sliderRef, blackStar }) => {
       <div className="container mb-100 mt-60">
 
           <div className="row feat justify-content-center mt-100">
-              <div className="col-lg-8 items wow active fadeIn codeBlock" data-wow-delay=".3s" style={{ background: "rgba(0,0,0,0.8)!important;", zIndex: 1, height: "40vh", width: "auto", padding: "0.2rem!important;", borderRadius: "5rem"}}>
+              <div className="col-lg-8 items wow active fadeIn codeBlock" data-wow-delay=".3s" style={{ background: "rgba(0,0,0,0.8)!important;", zIndex: 3, height: "40vh", width: "auto", padding: "0.2rem!important;", borderRadius: "5rem"}}>
                   <ReactFlow
                       nodes={nodes}
                       edges={edges}
