@@ -1,7 +1,7 @@
 const particlesBlackConfig = {
   particles: {
     number: {
-      value: 130,
+      value: 10,
       density: {
         enable: true,
         value_area: 900,

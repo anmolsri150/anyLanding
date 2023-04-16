@@ -1121,12 +1121,12 @@ span:hover {
 .loading.isdone {
   top: 50%;
   opacity: 0;
-  -webkit-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  transition: all 0.8s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
   -webkit-transition-delay: 0.5s;
   -o-transition-delay: 0.5s;
-  transition-delay: 0.5s;
+  transition-delay: 0.1s;
 }
 
 .loading span {
