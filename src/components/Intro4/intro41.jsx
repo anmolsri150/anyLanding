@@ -26,8 +26,8 @@ const Intro4 = ({ sliderRef, blackStar }) => {
   return (
       <div className="container mb-100 mt-60">
 
-          <div className="row feat justify-content-center mt-100">
-              <div className="col-lg-8 items wow active fadeIn codeBlock" data-wow-delay=".3s" style={{ background: "rgba(0,0,0,0.8)!important;", zIndex: 3, height: "40vh", width: "auto", padding: "0.2rem!important;", borderRadius: "5rem"}}>
+          <div className="row feat justify-content-center mt-100" style={{width: "100%"}}>
+              <div className="col-10 offset-1 offset-lg-0 col-lg-8 items wow active fadeIn codeBlock" data-wow-delay=".3s" style={{ background: "rgba(0,0,0,0.8)!important;", zIndex: 3, height: "40vh", width: "100%", padding: "0.2rem!important;", borderRadius: "5rem"}}>
                   <ReactFlow
                       nodes={nodes}
                       edges={edges}
@@ -35,7 +35,7 @@ const Intro4 = ({ sliderRef, blackStar }) => {
                       onEdgesChange={onEdgesChange}
                       onConnect={onConnect}
                       proOptions={proOptions}
-                      style={{borderRadius: "2rem"}}
+                      style={{borderRadius: "2rem", width: "100%"}}
                   >
                       <Background variant="dots" gap={12} size={1} />
                   </ReactFlow>

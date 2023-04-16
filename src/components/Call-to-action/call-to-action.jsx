@@ -23,7 +23,7 @@ const CallToAction = ({img}) => {
               <div className="content sm-mb30">
                 <Split>
                   <h6 className="wow words chars splitting" data-splitting>
-                    Interested?
+                    Interested
                   </h6>
                   <h2 className="wow words chars splitting" data-splitting>
                     Join our <br /> <b className="back-color">Mailing List</b>
