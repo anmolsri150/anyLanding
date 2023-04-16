@@ -66,14 +66,6 @@ const Intro4 = ({ sliderRef, blackStar }) => {
     };
     const [nodes, setNodes, onNodesChange] = useNodesState([
         {
-            id: '1',
-            type: 'input',
-            data: { label: '' },
-            position: { x: 0, y: 50 },
-            style: { background: '#010101', border: '1px solid #777' },
-            sourcePosition: 'right',
-        },
-        {
             id: '2',
             type: 'selectorNode',
             data: { onChange: onChange, color: initBgColor },
@@ -85,7 +77,7 @@ const Intro4 = ({ sliderRef, blackStar }) => {
             type: 'output',
             data: { label: '' },
             position: { x: 650, y: 25 },
-            style: { background: '#010101', border: '1px solid #777' },
+            style: { background: '#010101', border: '1px solid #777', padding: 10 },
             targetPosition: 'left',
         },
         {
@@ -93,18 +85,11 @@ const Intro4 = ({ sliderRef, blackStar }) => {
             type: 'output',
             data: { label: '' },
             position: { x: 650, y: 100 },
-            style: { background: '#010101', border: '1px solid #777' },
+            style: { background: '#010101', border: '1px solid #777', padding: 10 },
             targetPosition: 'left',
         },
     ]);
     const [edges, setEdges, onEdgesChange] = useEdgesState([
-        {
-            id: 'e1-2',
-            source: '1',
-            target: '2',
-            animated: true,
-            style: { stroke: '#fff' },
-        },
         {
             id: 'e2a-3',
             source: '2',
