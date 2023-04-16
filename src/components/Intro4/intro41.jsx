@@ -28,6 +28,15 @@ const defaultViewport = { x: 0, y: 0, zoom: 1.5 };
 const Intro4 = ({ sliderRef, blackStar }) => {
     const [bgColor, setBgColor] = useState(initBgColor);
     const [visibility, setVisibility] = useState(initBgColor);
+    const [innerWidth, setInnerWidth] = useState(initBgColor);
+
+    const resize = () => {
+        setInnerWidth(window.innerWidth)
+    }
+    useEffect(()=> {
+        window.addEventListener("resize", resize);
+        resize();
+    }, [])
     useEffect(()=> {
         if (visibility) {
             Array.from(document.getElementsByClassName("mouse-cursor")).forEach((el) => {
@@ -39,6 +48,10 @@ const Intro4 = ({ sliderRef, blackStar }) => {
             });
         }
     }, [visibility])
+    const getHeight = (innerWidth) => {
+        if (innerWidth <= 1000) return "26vh"
+        return "40vh"
+    }
     const switchMouseCursor = (val) => {
         console.log("sd")
         setVisibility(val)
@@ -69,7 +82,7 @@ const Intro4 = ({ sliderRef, blackStar }) => {
             id: '2',
             type: 'selectorNode',
             data: { onChange: onChange, color: initBgColor },
-            style: { background: '#010101', border: '1px solid #777', padding: 10 },
+            style: { background: '#010101', border: '1px solid #777', padding: 20 },
             position: { x: 300, y: 50 },
         },
         {
@@ -85,7 +98,7 @@ const Intro4 = ({ sliderRef, blackStar }) => {
             type: 'output',
             data: { label: '' },
             position: { x: 650, y: 100 },
-            style: { background: '#010101', border: '1px solid #777', padding: 10 },
+            style: { background: '#010101', border: '1px solid #777', padding: 20 },
             targetPosition: 'left',
         },
     ]);
@@ -114,7 +127,7 @@ const Intro4 = ({ sliderRef, blackStar }) => {
       <div className="container mb-100 mt-60">
 
           <div className="row feat justify-content-center mt-100" style={{width: "100%"}} onMouseEnter={() => switchMouseCursor(true)} onMouseLeave={() => switchMouseCursor(false)}>
-              <div className="col-10 offset-1 offset-lg-0 col-lg-10 items wow active fadeIn codeBlock" data-wow-delay=".3s" style={{ background: "rgba(0,0,0,0.8)!important;", zIndex: 3, height: "40vh", width: "100%", padding: "0.2rem!important;", borderRadius: "5rem"}}>
+              <div className="col-10 offset-1 offset-lg-0 col-lg-10 items wow active fadeIn codeBlock" data-wow-delay=".3s" style={{ background: "rgba(0,0,0,0.8)!important;", zIndex: 3, height: getHeight(innerWidth), width: "100%", padding: "0.2rem!important;", borderRadius: "5rem"}}>
                   <ReactFlow
                       nodes={nodes}
                       edges={edges}
