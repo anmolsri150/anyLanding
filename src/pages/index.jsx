@@ -109,7 +109,7 @@ const Homepage5 = () => {
       {/*      </div>*/}
       {/*      <div className="line top right"></div>*/}
       {/*  </section>*/}
-      <CallToAction />
+      {/*<CallToAction />*/}
       {/*<Footer />*/}
     </DarkTheme>
   );
