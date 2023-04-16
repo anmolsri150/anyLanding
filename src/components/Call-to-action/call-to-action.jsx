@@ -36,7 +36,7 @@ const CallToAction = ({img}) => {
             <div className="col-md-4 col-lg-3 valign">
               <a
                   className="butn bord curve wow fadeInUp"
-                  data-wow-delay=".5s"
+                  data-wow-delay=".08s"
                   onClick={showForm}
                   style={{zIndex: 2}}
               >
