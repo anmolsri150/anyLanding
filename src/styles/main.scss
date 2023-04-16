@@ -10,6 +10,14 @@
   height: 0;
 }
 
+
+.particles2 {
+  min-height: 70vh!important;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  border:none!important;
+}
 .codeBlock {
   border-radius: 2rem;
 }
@@ -23,6 +31,10 @@
 }
 
 .color-font .Typewriter .Typewriter__cursor {
+  color: #f64f59!important;
+  -webkit-text-fill-color: #f64f59!important;
+}
+.color-font sup {
   color: #f64f59!important;
   -webkit-text-fill-color: #f64f59!important;
 }
