@@ -35,9 +35,9 @@ const Homepage5 = () => {
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
       <Intro4 />
-      <AboutUs3 />
+      {/*<AboutUs3 />*/}
       {/*<Works3 />*/}
-      <Services3 />
+      {/*<Services3 />*/}
       {/*<MinimalArea2 />*/}
       {/*<FullTestimonials classText="pb-0" />*/}
       {/*<Team />*/}
@@ -108,7 +108,7 @@ const Homepage5 = () => {
       {/*      <div className="line top right"></div>*/}
       {/*  </section>*/}
       <CallToAction />
-      <Footer />
+      {/*<Footer />*/}
     </DarkTheme>
   );
 };

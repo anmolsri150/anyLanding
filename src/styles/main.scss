@@ -9,6 +9,23 @@
   width: 0;
   height: 0;
 }
+
+.codeBlock {
+  border-radius: 2rem;
+}
+
+.codeBlock:after {
+  border-radius: 2rem;
+}
+
+.codeBlock:before {
+  border-radius: 2rem;
+}
+
+.color-font .Typewriter .Typewriter__cursor {
+  color: #f64f59!important;
+  -webkit-text-fill-color: #f64f59!important;
+}
 .slider .social-icon a {
   margin: 0 3px;
 }

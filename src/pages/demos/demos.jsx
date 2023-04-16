@@ -19,6 +19,7 @@ const Demos = () => {
   }, [pageLoaded]);
   return (
     <DarkTheme>
+      {/* eslint-disable-next-line react/no-unknown-property */}
       <style jsx>{`
         .sec-head h3 {
           font-size: 60px;

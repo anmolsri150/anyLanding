@@ -22,7 +22,7 @@ const Services3 = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-3 col-md-6 items md-mb30">
+          <div className="col-lg-3 col-md-6 items active md-mb30">
             <div className="item wow fadeIn" data-wow-delay=".3s">
               <span className="icon">
                 <i className="ion-ios-monitor"></i>

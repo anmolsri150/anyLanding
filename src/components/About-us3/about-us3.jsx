@@ -16,45 +16,51 @@ const AboutUs3 = () => {
     <section className="agency section-padding position-re">
       <div className="container">
         <div className="row">
-          <div className="col-lg-7">
+          <div className="col-lg-6">
             <div className="imgsec md-mb50">
               <div className="row">
-                <div className="col-md-6">
-                  <div className="item">
-                    <div
-                      className="imgone big-bord wow fadeInDown"
-                      data-wow-delay=".8s"
-                    >
-                      <img
-                        className="thumparallax-down"
-                        src={AboutUs3date.image1}
-                        alt=""
-                      />
-                    </div>
-                    <div className="exp">
-                      <h2 className="nmb-font">{AboutUs3date.exp.nmb}</h2>
-                      <h6>{AboutUs3date.exp.name}</h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="item">
-                    <div
-                      className="imgtwo big-bord wow fadeInUp"
-                      data-wow-delay=".6s"
-                    >
-                      <img
-                        className="thumparallax"
-                        src={AboutUs3date.image2}
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
+
+                <img
+                    className="thumparallax-down"
+                    src={AboutUs3date.illustration}
+                    alt=""
+                />
+                {/*<div className="col-md-6">*/}
+                  {/*// <div className="item">*/}
+                  {/*//   <div*/}
+                  {/*//     className="imgone big-bord wow fadeInDown"*/}
+                  {/*    data-wow-delay=".8s"*/}
+                  {/*  >*/}
+                  {/*    <img*/}
+                  {/*      className="thumparallax-down"*/}
+                  {/*      src={AboutUs3date.image1}*/}
+                  {/*      alt=""*/}
+                  {/*    />*/}
+                  {/*  </div>*/}
+                  {/*  <div className="exp">*/}
+                  {/*    <h2 className="nmb-font">{AboutUs3date.exp.nmb}</h2>*/}
+                  {/*    <h6>{AboutUs3date.exp.name}</h6>*/}
+                  {/*  </div>*/}
+                  {/*</div>*/}
+                {/*</div>*/}
+                {/*<div className="col-md-6">*/}
+                {/*  <div className="item">*/}
+                {/*    <div*/}
+                {/*      className="imgtwo big-bord wow fadeInUp"*/}
+                {/*      data-wow-delay=".6s"*/}
+                {/*    >*/}
+                {/*      <img*/}
+                {/*        className="thumparallax"*/}
+                {/*        src={AboutUs3date.image2}*/}
+                {/*        alt=""*/}
+                {/*      />*/}
+                {/*    </div>*/}
+                {/*  </div>*/}
+                {/*</div>*/}
               </div>
             </div>
           </div>
-          <div className="col-lg-5 valign">
+          <div className="col-lg-5 valign offset-lg-1">
             <div className="content">
               <Split>
                 <h4 className="wow words chars splitting" data-splitting>
