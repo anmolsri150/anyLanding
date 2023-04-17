@@ -83,7 +83,7 @@ const Intro4 = ({ sliderRef, blackStar }) => {
             type: 'selectorNode',
             data: { onChange: onChange, color: initBgColor },
             style: { background: '#010101', border: '1px solid #777', padding: 20 },
-            position: { x: 300, y: 50 },
+            position: { x: 300, y: 25 },
         },
     ]);
     const [edges, setEdges, onEdgesChange] = useEdgesState([
