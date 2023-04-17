@@ -30,7 +30,14 @@ const Intro4 = ({ sliderRef, blackStar }) => {
               <div className="col-lg-9">
                   <div className="cont text-center">
                       <h1>
-                          <span className="color-font">Software<sup>*</sup>&nbsp;</span>Defined<br/><span className="color-font">
+                          <span className="color-font"><Typewriter
+                              options={{
+                                  strings: ['Software', 'GPT'],
+                                  autoStart: true,
+                                  delay: 20,
+                                  loop: true,
+                              }}
+                          /><sup>*</sup>&nbsp;</span>Defined<br/><span className="color-font">
                           <Typewriter
                               options={{
                                   strings: ['ML Flows', 'Analytics', 'Web-Apps', 'Fun'],
