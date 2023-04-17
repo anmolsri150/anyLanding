@@ -37,8 +37,10 @@ const Intro4 = ({ sliderRef, blackStar }) => {
                                   delay: 20,
                                   loop: true,
                               }}
-                          /><br/>
-                          </span>Defined
+                          />
+                          </span>
+                          <br/>
+                          Defined
                           <br/>
                           <span className="color-font">
                           <Typewriter
