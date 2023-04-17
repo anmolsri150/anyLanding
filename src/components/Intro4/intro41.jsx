@@ -85,40 +85,8 @@ const Intro4 = ({ sliderRef, blackStar }) => {
             style: { background: '#010101', border: '1px solid #777', padding: 20 },
             position: { x: 300, y: 50 },
         },
-        {
-            id: '3',
-            type: 'output',
-            data: { label: '' },
-            position: { x: 650, y: 25 },
-            style: { background: '#010101', border: '1px solid #777', padding: 20 },
-            targetPosition: 'left',
-        },
-        {
-            id: '4',
-            type: 'output',
-            data: { label: '' },
-            position: { x: 650, y: 100 },
-            style: { background: '#010101', border: '1px solid #777', padding: 20 },
-            targetPosition: 'left',
-        },
     ]);
     const [edges, setEdges, onEdgesChange] = useEdgesState([
-        {
-            id: 'e2a-3',
-            source: '2',
-            target: '3',
-            sourceHandle: 'a',
-            animated: true,
-            style: { stroke: '#fff' },
-        },
-        {
-            id: 'e2b-4',
-            source: '2',
-            target: '4',
-            sourceHandle: 'b',
-            animated: true,
-            style: { stroke: '#fff' },
-        },
     ]);
 
     const proOptions = { hideAttribution: true };
