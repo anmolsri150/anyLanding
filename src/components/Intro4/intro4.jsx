@@ -37,7 +37,10 @@ const Intro4 = ({ sliderRef, blackStar }) => {
                                   delay: 20,
                                   loop: true,
                               }}
-                          />&nbsp;</span>Defined<br/><span className="color-font">
+                          /><br/>
+                          </span>Defined
+                          <br/>
+                          <span className="color-font">
                           <Typewriter
                               options={{
                                   strings: ['ML Flows', 'Analytics', 'Web-Apps', 'Fun'],
@@ -45,7 +48,9 @@ const Intro4 = ({ sliderRef, blackStar }) => {
                                   delay: 20,
                                   loop: true,
                               }}
-                          /></span><br/> Platform.
+                          /></span>
+                          <br/>
+                          Platform.
                       </h1>
                   </div>
               </div>
