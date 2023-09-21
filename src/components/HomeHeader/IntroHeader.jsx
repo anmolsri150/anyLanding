@@ -1,28 +1,13 @@
-import React, {useCallback} from "react";
+import React from "react";
 import particlesConfig from "../../config/particle-config";
 import particlesBlackConfig from "../../config/pr-s-black";
 import Particles from "react-tsparticles";
-import ReactFlow, {
-    Background,
-    useNodesState,
-    useEdgesState,
-    addEdge,
-} from 'reactflow';
 
 import 'reactflow/dist/style.css';
 
 import Typewriter from 'typewriter-effect';
-const initialNodes = [
-    { id: '1', position: { x: 0, y: 0 }, data: { label: '1' } },
-    { id: '2', position: { x: 0, y: 100 }, data: { label: '2' } },
-];
-const initialEdges = [{ id: 'e1-2', source: '1', target: '2' }];
-const Intro4 = ({ sliderRef, blackStar }) => {
-    const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
-    const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
+const IntroHeader = ({ sliderRef, blackStar }) => {
 
-    const proOptions = { hideAttribution: true };
-    const onConnect = useCallback((params) => setEdges((eds) => addEdge(params, eds)), [setEdges]);
   return (
       <header ref={sliderRef} className="particles particles2 circle-bg valign">
           <div className="container">
@@ -58,4 +43,4 @@ const Intro4 = ({ sliderRef, blackStar }) => {
   );
 };
 
-export default Intro4;
+export default IntroHeader;

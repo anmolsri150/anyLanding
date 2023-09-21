@@ -2,14 +2,6 @@ import React from "react";
 import handleAccordion from "../../common/handleAccordion";
 
 const Faq = () => {
-  //   $(".accordion").on("click", ".title", function () {
-  //     $(this).next().slideDown();
-  //     $(".accordion-info").not($(this).next()).slideUp();
-  //   });
-
-  //   $(".accordion").on("click", ".item", function () {
-  //     $(this).addClass("active").siblings().removeClass("active");
-  //   });
 
   return (
     <section className="app-faq section-padding">
@@ -18,19 +10,15 @@ const Faq = () => {
           <div className="col-lg-5">
             <div className="content md-mb50">
               <h6 className="stit mb-30">
-                <span className="left"></span> Faqs
+                <span className="left"></span> FAQ
               </h6>
               <h2 className="mb-30">
-                Have Any Questions on Minds? Frequently Asked Questions
+                Your computer Your Diary
               </h2>
               <p>
-                Sed perspiciatis unde omnis natus error sit voluptatem accus
-                doloremque laudantium totarem aperiam eaqupsa quae abillo
-                inventore veritatis quasi architecto
+              Spacetime is a web app that allows you to build and run modular apps on an infinite canvas.
+                Its designed for Human AI collaboration for the new age
               </p>
-              <a href="#0" className="butn-bord-red rounded buton mt-30">
-                <span>Get Free 7 Days Trial</span>
-              </a>
             </div>
           </div>
           <div className="col-lg-6 offset-lg-1">

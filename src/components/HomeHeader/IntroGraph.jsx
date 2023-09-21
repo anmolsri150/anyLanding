@@ -25,7 +25,7 @@ const nodeTypes = {
     selectorNode: ColorSelectorNode,
 };
 const defaultViewport = { x: 0, y: 0, zoom: 1.5 };
-const Intro4 = ({ sliderRef, blackStar }) => {
+const SampleGraph = ({ sliderRef, blackStar }) => {
     const [bgColor, setBgColor] = useState(initBgColor);
     const [visibility, setVisibility] = useState(initBgColor);
     const [innerWidth, setInnerWidth] = useState(initBgColor);
@@ -120,4 +120,4 @@ const Intro4 = ({ sliderRef, blackStar }) => {
   );
 };
 
-export default Intro4;
+export default SampleGraph;

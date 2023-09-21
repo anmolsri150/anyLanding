@@ -1,19 +1,10 @@
 import React from "react";
 import Navbar from "../components/Navbar/navbar";
-// import FullTestimonials from "../components/Full-testimonials/full-testimonials";
-// import CallToAction from "../components/Call-to-action/call-to-action";
-// import Footer from "../components/Footer/footer";
-// import Team from "../components/Team/team";
 import DarkTheme from "../layouts/Dark";
-// import Works3 from "../components/Works3/works3";
-// import Blogs4 from "../components/blogs/Blogs4/blogs4";
-import Intro4 from "../components/Intro4/intro4";
-import Intro41 from "../components/Intro4/intro41";
-// import AboutUs3 from "../components/About-us3/about-us3";
-// import Services3 from "../components/Services3/services3";
-// import MinimalArea2 from "../components/Minimal-Area2/minimal-area2";
+import IntroHeader from "../components/HomeHeader/IntroHeader";
+import Faq from "../components/Faq/faq";
 
-const Homepage5 = () => {
+const MachinesHome = () => {
   const navbarRef = React.useRef(null);
   const logoRef = React.useRef(null);
 
@@ -35,10 +26,11 @@ const Homepage5 = () => {
   return (
     <DarkTheme>
       <Navbar nr={navbarRef} lr={logoRef} />
-      <Intro4 />
-      <Intro41 />
+      <IntroHeader />
+      <Faq/>
+      {/*<Portfolio />*/}
     </DarkTheme>
   );
 };
 
-export default Homepage5;
+export default MachinesHome;
