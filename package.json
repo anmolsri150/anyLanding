@@ -25,6 +25,7 @@
     "sass": "^1.45.0",
     "slick-carousel": "^1.8.1",
     "swiper": "^7.3.0",
+    "typescript": "^5.2.2",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
