@@ -24,40 +24,27 @@ const Intro4 = ({ sliderRef, blackStar }) => {
     const proOptions = { hideAttribution: true };
     const onConnect = useCallback((params) => setEdges((eds) => addEdge(params, eds)), [setEdges]);
   return (
-    <header ref={sliderRef} className="particles particles2 circle-bg valign">
-      <div className="container">
-          <div className="row justify-content-center">
-              <div className="col-lg-9">
-                  <div className="cont text-center">
-                      <h1>
-                          <span className="color-font"><Typewriter
+      <header ref={sliderRef} className="particles particles2 circle-bg valign">
+          <div className="container">
+              <div className="row justify-content-center">
+                  <div className="col-lg-9">
+                      <div className="cont text-center">
+                          <h1>
+                          <span className="color-font">
+                          <Typewriter
                               options={{
-                                  strings: ['Software', 'GPT'],
+                                  strings: ["It's a diary", "It's your computer", "It's on the internet"],
                                   autoStart: true,
                                   delay: 20,
                                   loop: true,
                               }}
                           />
                           </span>
-                          <br/>
-                          Defined
-                          <br/>
-                          <span className="color-font">
-                          <Typewriter
-                              options={{
-                                  strings: ['ML Flows', 'Analytics', 'Web-Apps', 'Fun'],
-                                  autoStart: true,
-                                  delay: 20,
-                                  loop: true,
-                              }}
-                          /></span>
-                          <br/>
-                          Platform.
-                      </h1>
+                          </h1>
+                      </div>
                   </div>
               </div>
           </div>
-      </div>
 
       <Particles
         id="particles-js"
